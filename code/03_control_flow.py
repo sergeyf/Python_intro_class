@@ -108,3 +108,21 @@ for i in range(4):
 # we have more flexibility with range
 for i in range(1,10,3):
     print(i)
+    
+    
+
+
+
+
+# example: writing a string backwards
+x = "The forest and the trees."
+for i in range(len(x)-1,-1,-1):
+    print(x[i],sep='',end='')
+    
+    
+    
+
+
+
+# we probably should have just done this:
+print(x[-1::-1])

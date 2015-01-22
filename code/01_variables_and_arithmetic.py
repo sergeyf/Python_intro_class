@@ -1,6 +1,6 @@
 '''
 These notes and examples are based on 
-a Coursera Python class.
+a (much longer) Coursera Python class.
 So you can go re-learn this when necessary.
 https://class.coursera.org/programming1-002/
 '''
@@ -129,6 +129,11 @@ print(both_names == both_names_again)
 
 
 
+
+
+
+
+
 # lists!?
 x_list = [0,1,2,5]
 print(x_list)
@@ -152,6 +157,24 @@ print(x_list[0:2])
 print(x_list[1:])
 
 print(x_list[:-1])
+
+
+
+
+
+
+
+# and it turns out that strings are lists of characters
+x_str = "Why not?"
+
+print(x_str)
+
+print(x_str[0:2])
+
+print(x_str[1:])
+
+print(x_str[:-1])
+
 
 
 
