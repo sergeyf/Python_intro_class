@@ -46,7 +46,7 @@ print(x,y)
 
 # we can also check if two values are the same or not
 x == 10
-z = (x == 10.000)
+z = (y == 10.000)
 print(z)
 
 
@@ -89,7 +89,7 @@ x_string = 'one hundred years'
 print(x_string)
 
 y_string = '''now we can add
-newlines and even apostrophes
+newlines and even "apostrophes"
 and there won't be a problem.
 see?'''
 print(y_string)
@@ -141,11 +141,11 @@ print(x_list)
 x_list.append(9)
 print(x_list)
 
-print(x[0])
+print(x_list[0])
 
-print(x[100])
+print(x_list[100])
 
-print(x[-1])
+print(x_list[-1])
 
 
 

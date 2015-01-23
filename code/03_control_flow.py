@@ -1,5 +1,5 @@
 # if statements
-x = 'pie'
+x = 'not pie'
 if x == "pie":
     print("i am hungry")
 
@@ -8,11 +8,11 @@ if x == "pie":
 
 
 # if-else statements
-y = 5
+y = 5.0000001
 if y > 5:
     print(y,'is larger than 5')
 else:
-    print(y + ' is smaller than or equal to 5')
+    print(str(y) + ' is smaller than or equal to 5')
     
     
     
@@ -20,8 +20,11 @@ else:
     
     
 # in python, proper indentention is mandatory
+x = 'pie'
 if x == 'pie':
-print('this will never be printed')
+    print('this will never be printed')
+    if x == 'pie':
+        print('this will also never be printed')
 
 
 
@@ -29,6 +32,7 @@ print('this will never be printed')
 
 
 # compound statements
+x = 'cake'
 if x == 'pie' or x == 'cake':
     y = x + ' ' + x
     print (y)
@@ -54,20 +58,19 @@ else:
 # for statements
 list_variable = range(10)
 print(list_variable)
-for thingie in list_variable:
-    output = thingie**2 - thingie/4    
+for stuff in list_variable:
+    output = stuff**2 - stuff/4    
     print(output)
-    
 
 
 
 
 
 # while statements
-z = 10
-while z > 0:
+z = 1024
+while z > 1:
     print(z,'is still greater than zero...')
-    z = z - 1
+    z = z/2
 
 
 
@@ -78,11 +81,11 @@ while z > 0:
 g = 10
 counter = 0
 while g > 0:
-    print(z,'is still greater than zero...')
+    print(g,'is still greater than zero...')
     for i in range(g):
         counter += i
     print("counter is up to",counter)
-    z = z - 1
+    g = g - 1
     
 
 
@@ -106,7 +109,7 @@ for i in range(4):
 
 
 # we have more flexibility with range
-for i in range(1,10,3):
+for i in range(1,100,25):
     print(i)
     
     
@@ -117,7 +120,7 @@ for i in range(1,10,3):
 # example: writing a string backwards
 x = "The forest and the trees."
 for i in range(len(x)-1,-1,-1):
-    print(x[i],sep='',end='')
+    print(x[i],end='')
     
     
     
